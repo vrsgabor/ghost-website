@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function rotateItems() {
-        console.log("Rotating items...");
 
         const lastItem = wrappers.pop(); // Remove the last item from the array
         lastItem.classList.add("hidden"); // Fade out the last item
@@ -38,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 firstItem.classList.remove("hidden"); // Fade in
                 updateHighlight(); // Update the highlight
-            }, fadeDuration / 2); // Ensure it fades in slightly after fade-out starts
+            }, fadeDuration / 1); // Ensure it fades in slightly after fade-out starts
         }, fadeDuration);
     }
 
